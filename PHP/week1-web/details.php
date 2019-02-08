@@ -1,4 +1,4 @@
-<?php require_once('includes/read.php');?>
+<?php require_once('admin/read.php');?>
 
 
 <!DOCTYPE html>

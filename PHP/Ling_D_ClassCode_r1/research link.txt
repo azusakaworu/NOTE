@@ -1,0 +1,15 @@
+http://php.net/manual/en/timezones.php
+
+https://stackoverflow.com/questions/37586585/php-unset-session-variable/37586700
+
+https://www.tutorialspoint.com/sql/sql-update-query.htm
+
+http://php.net/manual/en/function.time.php
+
+https://www.bilibili.com/video/av10274152/?p=23
+
+https://www.bilibili.com/video/av34069180/?p=85
+
+http://php.net/manual/en/function.exec.php
+https://www.bilibili.com/video/av10274152/?p=43
+http://php.net/manual/en/function.intval.php

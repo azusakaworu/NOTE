@@ -1,4 +1,4 @@
-<?php require_once('includes/read.php');?>
+<?php require_once('admin/read.php');?>
 <!--require_once  确保一个文件只能被引入一次-->
 
 
