@@ -1,0 +1,23 @@
+http://php.net/manual/en/function.strlen.php
+http://php.net/manual/en/language.exceptions.php
+http://php.net/manual/en/function.exit.php
+https://www.geeksforgeeks.org/php-exit-function/
+http://php.net/manual/en/function.preg-match.php
+https://www.quora.com/What-is-the-difference-between-MySQL-and-mysqli
+http://php.net/manual/en/pdostatement.rowcount.php
+http://php.net/manual/en/pdostatement.fetchcolumn.php
+https://stackoverflow.com/questions/14151458/difference-between-mysql-mysqli
+https://help.aliyun.com/knowledge_detail/36351.html
+https://code.tutsplus.com/tutorials/pdo-vs-mysqli-which-should-you-use--net-24059
+https://www.tutorialspoint.com/sql/sql-insert-query.htm
+
+
+book: PHP and MySQL Web Development (Fourth Edition) {
+
+Chapter 23: using session control p387-393 in PHP
+Chapter 10: update p196 using MySQL database - tables
+Chapter 27: establishing user authentication mechanism and personalization p433-453
+ 
+(book reference imgs Google link)
+
+}
