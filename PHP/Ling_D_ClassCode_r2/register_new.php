@@ -1,5 +1,6 @@
 <?php
-//echo ' hahahah';
+//when user try to reigester....
+
 require_once('config.php');
 
 //create varibles for form name 
@@ -43,10 +44,12 @@ try{
 //pass arguments for register function
   register($username,$email,$passwd);
 
-//create variable for session array (valid_user : which user used to log in
-$_SESSION['valid_user'] = $username;
+//put the current username into session array (valid_user : current uername
+$_SESSION['valid_user'] = $username; 
 do_html_header('Register Successful');
-echo 'whelcom join us Ninjia Family 0-0!';
+echo 'whelcom join us Ninjia Family 0-0!.<br>';
+notify_password($username,$passwd);
+echo ' your password and usrname has been emailed to you.<br>';
 do_html_footer();
 
 

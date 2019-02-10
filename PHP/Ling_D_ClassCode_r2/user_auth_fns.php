@@ -32,6 +32,8 @@ function register($username,$email,$password){
 }
 
 
+/*---------------------------------------------------------------------------*/
+
 
 
 function login($username,$password){
@@ -55,20 +57,60 @@ function login($username,$password){
 }
 
 
-
+/*---------------------------------------------------------------------------*/
 
 function check_valid_user(){
+
    if(isset($_SESSION['valid_user'])){
 
    	echo 'logged in as ' .$_SESSION['valid_user'];
 
    }else{
-   	do_html_header('problem');
+   	do_html_header('problem:');
    	echo 'you are not logged in';
-   	do_html_url('loginPage.php','Login');
+   	//do_html_url('loginPage.php','Login');
    	do_html_footer();
    	exit;
    }
+}
+
+
+/*---------------------------------------------------------------------------*/
+function reset_password($username){
+
+}
+
+
+/*---------------------------------------------------------------------------*/
+function get_random_word(){
+
+}
+
+
+/*-----------------------------send email-----------------------------------------*/
+function notify_password($username,$password){
+
+    include('db_fns.php');
+    $result = $dbh->query("SELECT user_email FROM usersystem WHERE user_name = '".$username."'");
+    
+    if(!$result){
+    	throw new Exception('Could not find email address1');}
+    elseif ($result->rowCount() == 0) {
+    	throw new Exception('Could not find email address2');}
+    else{
+
+    	$row = $result->fetch(PDO::FETCH_OBJ); //PDO fectch a object
+    	$email = $row->user_email;
+    	$from = 'From: research2@loginsystem \r\n';
+    	$msg = 'Your username:'.$password.'and you '. $username.'\r\n'.
+    	       'please try to login in this page :loginpage.php  \r\n';
+
+    	if(mail($email,'Ninjia shcool login information', $msg,$from)){
+    		return true;
+    	}else{throw new Exception('Could not send email');}
+
+    }
+
 }
 
 

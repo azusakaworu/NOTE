@@ -78,6 +78,7 @@ function display_user_menu(){
 	?>
 	<h3 style="color: red;">This is home for members 0-0!</h3>
     <img src="desktop-home.jpg" alt="whlcome" >
+    <a href="logout.php">Log out</a>
 	<?php
 }
 

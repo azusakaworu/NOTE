@@ -10,6 +10,10 @@ https://stackoverflow.com/questions/14151458/difference-between-mysql-mysqli
 https://help.aliyun.com/knowledge_detail/36351.html
 https://code.tutsplus.com/tutorials/pdo-vs-mysqli-which-should-you-use--net-24059
 https://www.tutorialspoint.com/sql/sql-insert-query.htm
+https://stackoverflow.com/questions/20391807/how-do-i-fix-undefined-variable-error-in-php
+http://php.net/manual/en/function.unset.php
+http://php.net/manual/en/function.mail.php
+https://blog.csdn.net/h330531987/article/details/76014386
 
 
 book: PHP and MySQL Web Development (Fourth Edition) {
