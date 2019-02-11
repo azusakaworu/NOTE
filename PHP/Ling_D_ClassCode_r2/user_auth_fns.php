@@ -76,19 +76,33 @@ function check_valid_user(){
 
 
 /*---------------------------------------------------------------------------*/
-function reset_password($username){
+// function reset_password($username){
 
-}
+// }
 
 
 /*---------------------------------------------------------------------------*/
-function get_random_word(){
+// function get_random_word(){
+// 	 include('db_fns.php');
+//       $new_password = rand(100,99999);
+//       //echo $new_password;
+//       //update tbl_name SET 
+//       $result = $dbh->query("UPDATE usersystem SET passwd= '".$new_password."' WHERE user_name = ");
 
-}
+// }
 
 
 /*-----------------------------send email-----------------------------------------*/
 function notify_password($username,$password){
+	// Please specify your Mail Server - Example: mail.example.com.
+       ini_set("SMTP","	mail.lingdingportfolio.ca");
+
+// Please specify an SMTP Number 25 and 8889 are valid SMTP Ports.
+       ini_set("smtp_port","465");
+
+// Please specify the return address to use
+       ini_set('sendmail_from', '');
+
 
     include('db_fns.php');
     $result = $dbh->query("SELECT user_email FROM usersystem WHERE user_name = '".$username."'");
@@ -100,12 +114,14 @@ function notify_password($username,$password){
     else{
 
     	$row = $result->fetch(PDO::FETCH_OBJ); //PDO fectch a object
-    	$email = $row->user_email;
+    	$emailTo = $row->user_email;
+    	//if(!$emailTo){throw new Exception('Could not find email address3');}
+
     	$from = 'From: research2@loginsystem \r\n';
     	$msg = 'Your username:'.$password.'and you '. $username.'\r\n'.
     	       'please try to login in this page :loginpage.php  \r\n';
 
-    	if(mail($email,'Ninjia shcool login information', $msg,$from)){
+    	if(mail($emailTo,'Ninjia shcool login information', $msg,$from)){
     		return true;
     	}else{throw new Exception('Could not send email');}
 

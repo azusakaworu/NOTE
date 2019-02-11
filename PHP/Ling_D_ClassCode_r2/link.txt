@@ -14,6 +14,7 @@ https://stackoverflow.com/questions/20391807/how-do-i-fix-undefined-variable-err
 http://php.net/manual/en/function.unset.php
 http://php.net/manual/en/function.mail.php
 https://blog.csdn.net/h330531987/article/details/76014386
+https://stackoverflow.com/questions/15402887/what-are-the-php-ini-parameters-to-set-for-sending-email
 
 
 book: PHP and MySQL Web Development (Fourth Edition) {

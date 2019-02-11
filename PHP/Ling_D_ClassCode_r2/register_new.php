@@ -47,8 +47,10 @@ try{
 //put the current username into session array (valid_user : current uername
 $_SESSION['valid_user'] = $username; 
 do_html_header('Register Successful');
+//get_random_word();
 echo 'whelcom join us Ninjia Family 0-0!.<br>';
 notify_password($username,$passwd);
+
 echo ' your password and usrname has been emailed to you.<br>';
 do_html_footer();
 
