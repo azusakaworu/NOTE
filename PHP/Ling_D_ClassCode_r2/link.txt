@@ -23,6 +23,6 @@ Chapter 23: using session control p387-393 in PHP
 Chapter 10: update p196 using MySQL database - tables
 Chapter 27: establishing user authentication mechanism and personalization p433-453
  
-(book reference imgs Google link)
+
 
 }

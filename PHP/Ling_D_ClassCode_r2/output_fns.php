@@ -77,7 +77,7 @@ function display_registration_from(){
 function display_user_menu(){
 	?>
 	<h3 style="color: red;">This is home for members 0-0!</h3>
-    <img src="desktop-home.jpg" alt="whlcome" >
+    <img src="desktop-home.png" width="400px" alt="whlcome" ><br>
     <a href="logout.php">Log out</a>
 	<?php
 }
